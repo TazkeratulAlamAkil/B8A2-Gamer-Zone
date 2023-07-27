@@ -104,7 +104,9 @@ a {
     gap: 3.5rem;
     justify-content: space-between;
 }
-
+.banner-text{
+    flex-basis: 50%;
+}
 
 .banner-img {
     flex-basis: 50%;
