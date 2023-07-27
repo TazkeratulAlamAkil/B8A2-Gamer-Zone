@@ -3,14 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: 'Work Sans', sans-serif;
 }
+
+
 img,
 svg {
     display: block;
     max-width: 100%;
 }
+
 .btn-primary {
     border: 0;
     background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
@@ -188,7 +192,7 @@ a {
     height: 100%;
     top: 0;
     border-radius: 16px;
-    border: 4px solid  #ff42a5;
+    border: 4px solid #ff42a5;
     background: #00000096;
     display: none;
     flex-direction: column;
@@ -204,3 +208,84 @@ a {
     font-weight: 600;
 }
 
+/* Play instantly section */
+#play-instantly {
+   padding: 2.2rem 15rem;
+}
+#play-instantly .container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 100px;
+    
+}
+
+.play-instantly-content {
+    text-align: right;
+    flex-basis: 30%;
+}
+
+.play-instantly-content h2 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.play-instantly-content h2 span {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.play-instantly-image {
+    flex-basis: 50%;
+}
+
+img.big {
+    padding-left: 145px;
+}
+
+img.small {
+    position: relative;
+    bottom: 230px;
+    margin-bottom: -230px;
+}
+
+/* categories section */
+#categories {
+    padding: 2.2rem 15rem;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: row;
+}
+
+.item {
+    background-color: white;
+    padding: 10px 20px 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    border-radius: 50px;
+    transition: 0.3s;
+    border: 2px solid transparent;
+    color:#0B0223;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.item:hover {
+    border: 2px solid #FF42A5;
+    color: #FF42A5
+}
+
+.item img {
+    width: 30px;
+}
