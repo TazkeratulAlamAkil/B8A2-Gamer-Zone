@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
 }
 
 
@@ -104,9 +105,7 @@ a {
     justify-content: space-between;
 }
 
-.banner-text {
-    width: 50%;
-}
+
 
 .banner-img {
     height: 100%;
@@ -137,7 +136,7 @@ a {
 }
 
 /* Videos section */
-#video {
+.video {
     padding: 2.2rem 15rem;
     margin: auto;
 }
@@ -209,11 +208,11 @@ a {
 }
 
 /* Play instantly section */
-#play-instantly {
+.play-instantly {
     padding: 2.2rem 15rem;
 }
 
-#play-instantly .container {
+.play-instantly .container {
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -254,7 +253,7 @@ img.small {
 }
 
 /* categories section */
-#categories {
+.categories-section {
     padding: 2.2rem 15rem;
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
 }
