@@ -1,159 +1,231 @@
-/* Responsive for mobile */
-@media screen and (max-width: 576px) {
-    nav{
-        padding: 1rem;
+/* Mobile Devices */
+@media screen and (max-width:576px) {
+
+    .container {
+        padding: 0 25px;
     }
-    nav, .menu-options ul{
+
+    .btn {
+        padding: 20px 35px;
+    }
+    
+   /* Nav Section */
+    header .container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .nav-menu ul {
         flex-direction: column;
     }
-    .logo{
-        margin-bottom: 3rem;
+
+  /* banner section */
+
+    .banner-section .container {
+        padding: 0;
     }
-    .follow-us-nav{
-        margin-bottom: 2rem;
+
+    .banner {
+        flex-direction: column-reverse;
     }
-    .banner{
-        padding: 1rem;
-        flex-direction: column;
-        gap: 0;
+
+    .banner-content {
+        
+        padding: 140px 25px;
     }
-    .video{
-        padding: 1rem;
+
+    .banner-content h1 {
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 10px;
     }
-    .video-container{
-        grid-template-columns: repeat(1, 1fr);
+
+    .banner-content h1 span {
+        font-size: 90px;
+        line-height: 100px;
     }
-    .video-image img{
+     
+    /* Funny videos Section */
+
+    .section-title h2 {
+        line-height: 1;
+    }
+
+    .video-container {
+        grid-template-columns: 1fr;
+    }
+
+    .video-image>img {
         width: 100%;
     }
-    .video-card{
+
+    .video-card {
         text-align: center;
     }
-    .play-instantly{
-        padding: 1rem;
-    }
-    .play-instantly .container{
+
+  /* play instantly section */
+
+    .play-instantly-section .container {
         flex-direction: column;
     }
-    .play-instantly-content{
+
+    .play-instantly-section{
+        padding-bottom: 50px;
+    }
+    .play-instantly-content {
         text-align: center;
+        flex-basis: 30%;
     }
-    img.big{
-        padding-left: 120px;
+
+    img.big {
+        padding-left: 70px;
     }
+
     img.small {
         position: relative;
         bottom: 120px;
         margin-bottom: -120px;
-        left: 50px;
+        left: -8px;
         width: 50%;
     }
+    
+    /* categories section */
+
     .categories-section{
-        padding: 5rem 0;
+        padding: 0;
     }
     .categories{
         display: grid;
+        grid-template-columns: repeat(3,1fr);
         gap: 5px;
-        grid-template-columns: repeat(2, 1fr);
     }
     .item{
-        padding: 5px;
+        padding: 10px 5px;
         gap: 5px;
+        font-size: 10px;
     }
-    footer{
-        padding: 2rem;
+    .item img {
+        width: 25px;
     }
-    .footer-logo{
-        font-size: 20px;
-        gap: .5rem;
-    }
-    .footer-menu ul{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .privacy-policy{
+    
+    /* footer section */
+
+    .footer-menu ul {
+        gap: 30px;
         flex-wrap: wrap;
-        gap: 20px;
+        justify-content: center;
     }
+
+    
 }
 
+/* Medium Devices */
+@media screen and (min-width:577px) and (max-width:992px) {
 
-/* responsive for tablet */
-@media screen and (min-width:577px) and (max-width: 960px) {
-    nav{
-        padding: 1rem;
+    .container {
+        padding: 0 25px;
     }
-    nav, .menu-options ul{
+
+  /* nav section */
+
+    header .container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .nav-menu ul {
         flex-direction: column;
     }
-    .logo{
-        margin-bottom: 3rem;
+
+   /* banner section */
+
+    .banner-section .container {
+        padding: 0;
     }
-    .follow-us-nav{
-        margin-bottom: 2rem;
+
+    .banner {
+        flex-direction: column-reverse;
     }
-    .banner{
-        padding: 1rem;
+
+    .banner-content {
+        padding: 140px 25px;
+        display: flex;
         flex-direction: column;
-        gap: 0;
+        justify-content: center;
     }
-    .video{
-        padding: 1rem;
+
+    .banner-content h1 {
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 10px;
     }
-    .video-container{
-        grid-template-columns: repeat(2, 1fr);
+
+    .banner-content h1 span {
+        font-size: 90px;
+        line-height: 100px;
     }
-    .video-image img{
+  
+/* funny videos section */
+
+    .section-title h2 {
+        line-height: 1;
+    }
+
+    .video-container {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .video-image>img {
         width: 100%;
     }
-    .video-card{
+
+    .video-card {
         text-align: center;
     }
-    .play-instantly{
-        padding: 1rem;
-    }
-    .play-instantly .container{
+
+  /* play instantly section */
+
+    .play-instantly-section .container {
         flex-direction: column;
     }
-    .play-instantly-content{
+
+    .play-instantly-section{
+        padding-bottom: 0;
+    }
+    .play-instantly-content {
         text-align: center;
+        flex-basis: 30%;
     }
-    img.big{
-        padding-left: 120px;
+
+    img.big {
+        padding-left: 150px;
     }
+
     img.small {
         position: relative;
-        bottom: 120px;
+        bottom: 280px;
         margin-bottom: -120px;
-        left: 50px;
+        left: -8px;
         width: 50%;
     }
+
+    /* categories */
+
     .categories-section{
-        padding: 5rem 0;
+        padding: 50px 0;
     }
     .categories{
         display: grid;
-        gap: 5px;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3,1fr);
     }
-    .item{
-        padding: 5px;
-        gap: 5px;
-    }
-    footer{
-        padding: 2rem;
-    }
-    .footer-logo{
-        font-size: 45px;
-        gap: .5rem;
-    }
-    .footer-menu ul{
-        flex-wrap: wrap;
-        padding: 5rem;
-    }
-    .privacy-policy{
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-}
+     
+    /* footer section */
 
+    .footer-menu ul {
+        gap: 35px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    
+}
